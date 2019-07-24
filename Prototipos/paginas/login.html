@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>RedeLojas | Oxente</title>
+	<!-- Link estilo  CSS do SITE-->
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.7 -->
@@ -30,42 +32,54 @@
 		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition login-page">
-	<div class="login-box">
-		<!-- /.login-logo -->
-		<div class="login-box-body">
-			<div class="login-logo">
-				<b>RedeLojas</b>Oxente
-			</div>
-			<p class="login-box-msg"><b>Faça seu login<b></p>
-
-			<form action="ativitAssociados.html" method="post">
-				<div class="form-group has-feedback">
-					<input type="text" class="form-control" placeholder="CNPJ">
-					<span class="glyphicon glyphicon-user form-control-feedback"></span>
-				</div>
-				<div class="form-group has-feedback">
-					<input type="password" class="form-control" placeholder="Senha">
-					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
-				</div>
-				<div class="row">
-					<div class="col-xs-8">
-						<div class="checkbox icheck">
-							<label>
-								<input type="checkbox"> Lembrar senha
-							</label>
+<body id="corpo">
+	<div class="container" id="painel-login">
+			<header>
+					<nav class="navegacao">
+						<a href="../index.html">INICIO</a> 
+						<a >|</a>  
+						<a href="./paginas/login.html">ÁREA DO ASSOCIADO </a>  
+					</nav>
+					
+				</header>
+				<div class="login-box " id="">
+					<!-- /.login-logo -->
+					<div class="login-box-body">
+						<div class="login-logo">
+							<b>RedeLojas</b>Oxente
 						</div>
+						<p class="login-box-msg"><b>Faça seu login<b></p>
+			
+						<form action="ativitAssociados.html" method="post">
+							<div class="form-group has-feedback">
+								<input type="text" class="form-control" placeholder="CNPJ">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" class="form-control" placeholder="Senha">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									<div class="checkbox icheck">
+										<label>
+											<input type="checkbox"> Lembrar senha
+										</label>
+									</div>
+								</div>
+								<!-- /.col -->
+								<div class="col-xs-4">
+									<button type="submit" class="btn btn-primary btn-block">Entrar</button>
+								</div>
+								<!-- /.col -->
+							</div>
+						</form>
 					</div>
-					<!-- /.col -->
-					<div class="col-xs-4">
-						<button type="submit" class="btn btn-primary btn-block">Entrar</button>
-					</div>
-					<!-- /.col -->
+					<!-- /.login-box-body -->
 				</div>
-			</form>
-		</div>
-		<!-- /.login-box-body -->
+
 	</div>
+	
 	<!-- /.login-box -->
 
 	<!-- jQuery 3 -->
