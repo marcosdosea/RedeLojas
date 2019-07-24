@@ -1,0 +1,14 @@
+*{ margin:0; padding: 0; font-size:100%;border:none;outline: none;font-weight: 300;box-sizing: border-box;}
+html, body{width:100%;}
+/*=======================  INDEX =================================  */
+#corpo{background-color: #DAE3DF}
+#painel-entrada{background: #fff;width:90%;text-align: center;margin-top:7%;box-sizing: border-box;box-shadow:5px 5px 25px;
+}
+.logo{margin-top:5%;width:210px;height:180px;}
+.navegacao{margin-top:2%;}
+.navegacao a{color:#171B71;font-size: 1.5em;padding: 2px;font-weight: 700;}
+.navegacao a:hover{color:#6C72DA ;border-bottom:2px solid orange;}
+#painel-login{background: #fff;width:40%;text-align: center;margin-top:10%;box-sizing: border-box;
+    box-shadow:5px 5px 25px;}
+/* =================== HOME ====================================*/
+.graficos{box-shadow: 1px -2px 10px black;display: inline-block;width:49%;margin-left: 4px;padding:2px}
