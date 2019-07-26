@@ -67,16 +67,22 @@ var barChart = new Chart($('#canvas-2'), {
 }); // eslint-disable-next-line no-unused-vars
 
 var doughnutChart = new Chart($('#pieChart'), {
-  type: 'doughnut',
+
+  type: 'pie',
   data: {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['Elétrico', 'Pintura', 'Construção'],
     datasets: [{
-      data: [300, 50, 100],
-      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+      data: [150, 150, 230],
+      backgroundColor: ['pink', 'orange', 'gray'],
+      hoverBackgroundColor: ['pink', 'orange', 'gray']
     }]
   },
   options: {
+    title:{
+      display: true,
+      fontSize: 20,
+      text: "Compras por grupo:"
+    },
     responsive: true
   }
 }); // eslint-disable-next-line no-unused-vars
@@ -110,17 +116,25 @@ var radarChart = new Chart($('#canvas-4'), {
   }
 }); // eslint-disable-next-line no-unused-vars
 
-var pieChart = new Chart(document.querySelector('#'), {
+var pieChart = new Chart(document.querySelector('#canvas-5'), {
   type: 'pie',
   data: {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['São Marcos', 'Casa da Carne', 'Agronegócio'],
     datasets: [{
       data: [300, 50, 100],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
     }]
   },
   options: {
+    title: {
+      display: true,
+      fontSize: 20,
+      text: "Compras por fornecedor: "
+    },
+    labels: {
+      fontStyle: "bold",
+    },
     responsive: true
   }
 }); // eslint-disable-next-line no-unused-vars
