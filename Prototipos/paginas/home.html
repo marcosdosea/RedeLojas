@@ -48,7 +48,7 @@
 
 		<header class="main-header">
 			<!-- Logo -->
-			<a href="produto.html" class="logo">
+			<a href="home.html" class="logo">
 				<!-- mini logo for sidebar mini 50x50 pixels -->
 				<span class="logo-mini"><b>O</b>XE</span>
 				<!-- logo for regular state and mobile devices -->
@@ -65,7 +65,8 @@
 					<ul class="nav navbar-nav">
 						<!-- Control Sidebar Toggle Button -->
 						<li>
-							<a href="../index.html" >Sair <!--<i class="fa fa-gears"></i>--></a>
+							<a href="../index.html">Sair
+								<!--<i class="fa fa-gears"></i>--></a>
 						</li>
 					</ul>
 				</div>
@@ -88,11 +89,20 @@
 				<!-- sidebar menu: : style can be found in sidebar.less -->
 				<ul class="sidebar-menu" data-widget="tree">
 					<li class="header">Home</li>
-					<li>
-						<a href="ativitAssociados.html">
-							<i class="fa fa-book"></i>
-							<span>Notícias</span>
+					<li class="treeview menu-open">
+						<a href="#">
+							<i class="fa fa-pie-chart"></i>
+							<span>Compras</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
 						</a>
+						<ul class="treeview-menu" style="display: block;">
+							<li><a href="fornecedor.html"><i class="fa fa-circle-o"></i> Ver Fornecedores</a></li>
+							<li><a href="comprasFornecedor.html"><i class="fa fa-circle-o"></i> Compras/Fornecedor</a>
+							</li>
+							<li><a href="comprasGrupo.html"><i class="fa fa-circle-o"></i> Compras/Grupo</a></li>
+						</ul>
 					</li>
 					<li>
 						<a href="mensalidade.html">
@@ -119,11 +129,11 @@
 						</a>
 					</li>
 					<li>
-                        <a href="produto.html">
-                            <i class="fa fa-book"></i>
-                            <span>Produto</span>
-                        </a>
-                    </li>
+						<a href="produto.html">
+							<i class="fa fa-book"></i>
+							<span>Produto</span>
+						</a>
+					</li>
 				</ul>
 			</section>
 			<!-- /.sidebar -->
@@ -131,55 +141,46 @@
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
-			
 			<!-- Main content -->
 			<section class="content">
 				<div class="row">
-
-					<div class="col-md-13">
+					<div class="col-md-12">
 						<div class="box box-default">
-						  <div class="box-header with-border">
-							<i class="fa fa-bullhorn"></i>
-			  
-							<h3 class="box-title">Últimas Notícias</h3>
-						  </div>
-						  <!-- /.box-header -->
-						  <div class="box-body">
-							
-							<div>
-								<span class="logo-lg"><b><h3>RedeLojas</b>OXENTE:</h3></span>
-								
+							<div class="box-header with-border">
+								<i class="fa fa-bullhorn"></i>
+								<h3 class="box-title">Últimas Notícias</h3>
 							</div>
-							<div class="callout callout-info">								  
-								<p>A São Marcos de Aracaju, é o mais novo associado! </p>
-								<p>A Casa Pecuarista localizada em Ribeirópolis está associada conosco também.</p>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div>
+									<span class="logo-lg"><b>
+											<h3>RedeLojas
+										</b>OXENTE:</h3></span>
+
+								</div>
+								<div class="callout callout-info">
+									<p>A São Marcos de Aracaju, é o mais novo associado! </p>
+									<p>A Casa Pecuarista localizada em Ribeirópolis está associada conosco também.</p>
+								</div>
+
 							</div>
-							
-						  </div>
-						  <!-- /.box-body -->
+							<!-- /.box-body -->
 						</div>
 					</div>
 				</div>
 				<!-- /.box -->
 				<div class="graficos">
 					<canvas class="line-chart">
-					</canvas>	
+					</canvas>
 				</div>
-				
+
 				<div class="graficos">
-						<div class=".box-body">
-							<canvas id="pieChart">
-									
-							</canvas>
-						</div>
-						<!-- /.box-body -->
+					<canvas class="pieChart1">
+
+					</canvas>
 				</div>
 				<!-- CHARTS -->
-				
-
-
-
-
 			</section>
 			<!-- /.content -->
 		</div>
@@ -190,7 +191,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">×</span></button>
+						<span aria-hidden="true">×</span></button>
 					<h4 class="modal-title">Código de Barras #10</h4>
 				</div>
 				<div class="modal-body">
@@ -205,7 +206,7 @@
 		</div>
 		<!-- /.modal-dialog -->
 	</div>
-	
+
 	<!-- jQuery 3 -->
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- jQuery UI 1.11.4 -->
@@ -248,46 +249,77 @@
 
 
 
-	
-	
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 	<script src="../assets/js/charts.js"></script>
 	<script>
 		var ctx = document.querySelector(".line-chart");
 
-		var chartGraph = new Chart(ctx,{
+		var chartGraph = new Chart(ctx, {
 			type: 'line',
 			data: {
-				labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" ],
-				datasets:[
-					{
-						label: "TAXA DE VISITAS - 2017 ",
-						data: [5,10,5,14,10,15,6,14,8,12,15,5,10],
+				labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+				datasets: [{
+						label: "TAXA DE COMPRAS - 2018 ",
+						data: [5, 10, 5, 14, 10, 15, 6, 14, 8, 12, 15, 5, 10],
 						borderWidth: 6,
 						borderColor: 'rgba(77,166,253,0.85)',
 						backgroundColor: 'transparent',
 					},
 					{
-						label: "TAXA DE VISITAS - 2018",
+						label: "TAXA DE COMPRAS - 2019",
 						data: [9, 14, 11, 6, 5, 4, 3, 8, 11, 10, 13, 18, 6],
 						borderWidth: 6,
 						borderColor: 'rgba(6,204,6,0.85)',
 						backgroundColor: 'transparent',
 					},
-					
+
 				]
 			},
-			options:{
+			options: {
 				title: {
 					display: true,
 					fontSize: 20,
-					text: "RELATÓRIO"
+					text: "Compras por fornecedor ao mês"
 				},
 				labels: {
 					fontStyle: "bold"
 				}
 			}
-		})
+		});
+
+		var ctx1 = document.querySelector(".pieChart1");
+
+		var chartGraph = new Chart(ctx1, {
+			type: 'doughnut',
+			data: {
+				// cria-se legendas para os respectivos valores do vetor data
+				labels: ['Elétrico', 'Construção', 'Mecânico'],
+				datasets: [{
+					// cria-se um vetor data, com os valores a ser dispostos no gráfico
+					data: [10, 20, 30],
+					// cria-se uma propriedade para adicionar cores aos respectivos valores do vetor data
+					backgroundColor: ['rgb(255, 99, 132)', 'rgb(255, 199, 132)', 'rgb(55, 99, 132)']
+				}],
+			},
+			options: {
+				title: {
+					display: true,
+					fontSize: 20,
+					text: "Compras por grupos - Agosto"
+				},
+				footer: {
+					display: true,
+					fontSize: 20,
+					text: "Total!: 650000"
+				},
+
+				labels: {
+					fontStyle: "bold"
+				}
+			}
+		});
 	</script>
 </body>
 

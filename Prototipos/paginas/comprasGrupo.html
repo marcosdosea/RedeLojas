@@ -86,12 +86,21 @@
                 </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
-                    <li class="header">Compras Fornecedores</li>
-                    <li>
-                        <a href="ativitAssociados.html">
-                            <i class="fa fa-book"></i>
-                            <span>Notícias</span>
+                    <li class="header">Compras por Grupo</li>
+                    <li class="treeview menu-open">
+                        <a href="#">
+                            <i class="fa fa-pie-chart"></i>
+                            <span>Compras</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                         </a>
+                        <ul class="treeview-menu" style="display: block;">
+                            <li><a href="fornecedor.html"><i class="fa fa-circle-o"></i> Ver Fornecedores</a></li>
+                            <li><a href="comprasFornecedor.html"><i class="fa fa-circle-o"></i> Compras/Fornecedor</a>
+                            </li>
+                            <li><a href="comprasGrupo.html"><i class="fa fa-circle-o"></i> Compras/Grupo</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="mensalidade.html">
@@ -117,7 +126,7 @@
                             <span>Transparência</span>
                         </a>
                     </li>
-					<li>
+                    <li>
                         <a href="produto.html">
                             <i class="fa fa-book"></i>
                             <span>Produto</span>
@@ -148,76 +157,76 @@
                                     <h3 class="box-title">Listagem<small></small></h3>
                                 </p>
                             </div>
-							
-							<div class="box-body">
-								<div class="col-sm-12">
-									
-								
-									<div class="row">
-										<div class="form-group col-sm-3">
-											<label>Período Início:</label>
 
-											<div class="input-group">
-												<div class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</div>
-												<input type="date" class="form-control" placeholder="dd/mm/yyyy">
-											</div>
-											<!-- /.input group -->
-										</div>
-										<div class="form-group col-sm-3">
-											<label>Período Fim:</label>
+                            <div class="box-body">
+                                <div class="col-sm-12">
 
-											<div class="input-group">
-												<div class="input-group-addon">
-													<i class="fa fa-calendar"></i>
-												</div>
-												<input type="date" class="form-control" placeholder="dd/mm/yyyy">
-											</div>
-											<!-- /.input group -->
-										</div>
-										<div class="form-group col-sm-2">
-											<label>&nbsp </label>
-											<div class="input-group">
-												<button type="button" class="btn btn-round btn-info"> <i class=""></i>
-													Filtrar
-												</button>
-											</div>
-										</div>
-									</div>
-									<br>
-								</div>
-								<table id="example1" class="table table-bordered table-striped">
-									<thead>
-										<tr>
-											<th>Grupo</th>
-											<th>Valor</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Informática</td>
-											<td>R$ 3.560,45</td>
-										</tr>
-										<tr>
-											<td>Mecânica</td>
-											<td>R$ 5.320,55</td>
-										</tr>
-										<tr>
-											<td>Eletrônco</td>
-											<td>R$ 7.190,00</td>
-										</tr>
-										<tr>
-											<td>Elétrica</td>
-											<td>R$ 2.430,75</td>
-										</tr>
-										<tr>
-											<td>Construção</td>
-											<td>R$ 13.100,00</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+
+                                    <div class="row">
+                                        <div class="form-group col-sm-3">
+                                            <label>Período Início:</label>
+
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                            </div>
+                                            <!-- /.input group -->
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                            <label>Período Fim:</label>
+
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                            </div>
+                                            <!-- /.input group -->
+                                        </div>
+                                        <div class="form-group col-sm-2">
+                                            <label>&nbsp </label>
+                                            <div class="input-group">
+                                                <button type="button" class="btn btn-round btn-info"> <i class=""></i>
+                                                    Filtrar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Grupo</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Informática</td>
+                                            <td>R$ 3.560,45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mecânica</td>
+                                            <td>R$ 5.320,55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eletrônco</td>
+                                            <td>R$ 7.190,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Elétrica</td>
+                                            <td>R$ 2.430,75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Construção</td>
+                                            <td>R$ 13.100,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,28 +237,28 @@
     </div>
     <!-- ./wrapper -->
 
-	
-	<div class="modal fade" id="modal-default" style="display: none;">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">×</span></button>
-					<h4 class="modal-title">Código de Barras #10</h4>
-				</div>
-				<div class="modal-body">
-					<img src="../codbarra/codbarra.png" alt="Trulli" width="500" height="200">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
-					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-				</div>
-			</div>
-			<!-- /.modal-content -->
-		</div>
-		<!-- /.modal-dialog -->
-	</div>
-	
+
+    <div class="modal fade" id="modal-default" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Código de Barras #10</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="../codbarra/codbarra.png" alt="Trulli" width="500" height="200">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
     <!-- jQuery 3 -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
