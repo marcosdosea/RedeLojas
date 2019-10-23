@@ -1,0 +1,3 @@
+D:\Projetos\RedeLojas\Codigo\RedeLojas\RedeLojasWeb\obj\Debug\netcoreapp2.1\RedeLojasWeb.csproj.CoreCompileInputs.cache
+D:\Projetos\RedeLojas\Codigo\RedeLojas\RedeLojasWeb\obj\Debug\netcoreapp2.1\RedeLojasWeb.AssemblyInfoInputs.cache
+D:\Projetos\RedeLojas\Codigo\RedeLojas\RedeLojasWeb\obj\Debug\netcoreapp2.1\RedeLojasWeb.AssemblyInfo.cs
