@@ -34,11 +34,16 @@ namespace Web
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
 
-			services.AddDbContext<ApplicationDbContext>(options =>
-				options.UseSqlServer(
-					Configuration.GetConnectionString("DefaultConnection")));
+
+            // Conexão com o banco de Dados!
+			services.AddDbContext<Persistence.ContextDB>(options =>
+				options.UseMySQL(
+					Configuration.GetConnectionString("MySqlConnection")));
+
+
+            // Identity para o login.
 			services.AddDefaultIdentity<IdentityUser>()
-				.AddEntityFrameworkStores<ApplicationDbContext>();
+				.AddEntityFrameworkStores<Persistence.ContextDB>();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}

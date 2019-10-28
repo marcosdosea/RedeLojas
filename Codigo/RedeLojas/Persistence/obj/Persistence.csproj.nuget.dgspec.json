@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\RedeLojas\\Codigo\\RedeLojas\\Persistence\\Persistence.csproj": {}
+    "/Users/gabrielsantana/Desktop/RedeLojas/Codigo/RedeLojas/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\RedeLojas\\Codigo\\RedeLojas\\Persistence\\Persistence.csproj": {
+    "/Users/gabrielsantana/Desktop/RedeLojas/Codigo/RedeLojas/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\RedeLojas\\Codigo\\RedeLojas\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "/Users/gabrielsantana/Desktop/RedeLojas/Codigo/RedeLojas/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\Projetos\\RedeLojas\\Codigo\\RedeLojas\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\RedeLojas\\Codigo\\RedeLojas\\Persistence\\obj\\",
+        "projectPath": "/Users/gabrielsantana/Desktop/RedeLojas/Codigo/RedeLojas/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/gabrielsantana/.nuget/packages/",
+        "outputPath": "/Users/gabrielsantana/Desktop/RedeLojas/Codigo/RedeLojas/Persistence/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gabrielsantana/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,18 +36,32 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.16, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
